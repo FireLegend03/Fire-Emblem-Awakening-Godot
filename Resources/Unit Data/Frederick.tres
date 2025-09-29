@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="UnitData" load_steps=2 format=3 uid="uid://3nqwwodg2yj5"]
+
+[ext_resource type="Script" uid="uid://c0yi8um0v6v31" path="res://Scripts/unit_data.gd" id="1_084v6"]
+
+[resource]
+script = ExtResource("1_084v6")
+name = "Frederick"
+level = 1
+max_hp = 28
+strength = 13
+magic = 2
+skill = 12
+speed = 10
+luck = 6
+defense = 14
+resistance = 3
+movement = 7
+metadata/_custom_type_script = "uid://c0yi8um0v6v31"

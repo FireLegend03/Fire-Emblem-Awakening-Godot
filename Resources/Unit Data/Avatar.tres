@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="UnitData" load_steps=2 format=3 uid="uid://qkgogs3pv1hm"]
+
+[ext_resource type="Script" uid="uid://c0yi8um0v6v31" path="res://Scripts/unit_data.gd" id="1_dcdc5"]
+
+[resource]
+script = ExtResource("1_dcdc5")
+name = "Pedro"
+level = 1
+max_hp = 19
+strength = 6
+magic = 5
+skill = 5
+speed = 8
+luck = 2
+defense = 6
+resistance = 4
+movement = 5
+metadata/_custom_type_script = "uid://c0yi8um0v6v31"
