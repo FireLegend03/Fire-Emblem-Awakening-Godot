@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="UnitData" load_steps=2 format=3 uid="uid://d3g3sxu7a3glu"]
+
+[ext_resource type="Script" uid="uid://c0yi8um0v6v31" path="res://Scripts/unit_data.gd" id="1_hrix8"]
+
+[resource]
+script = ExtResource("1_hrix8")
+name = "Lissa"
+level = 1
+max_hp = 17
+strength = 1
+magic = 5
+skill = 4
+speed = 4
+luck = 8
+defense = 3
+resistance = 4
+movement = 5
+metadata/_custom_type_script = "uid://c0yi8um0v6v31"
