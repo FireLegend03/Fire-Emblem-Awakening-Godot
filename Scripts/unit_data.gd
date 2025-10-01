@@ -2,7 +2,8 @@ extends Resource
 
 class_name UnitData
 
-@export var name: String
+@export var unit_name: String
+@export var unit_class : String
 
 # Stats
 @export var level: int

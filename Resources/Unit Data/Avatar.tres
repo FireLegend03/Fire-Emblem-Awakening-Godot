@@ -4,7 +4,8 @@
 
 [resource]
 script = ExtResource("1_dcdc5")
-name = "Pedro"
+unit_name = "Pedro"
+unit_class = "Tactician"
 level = 1
 max_hp = 19
 strength = 6

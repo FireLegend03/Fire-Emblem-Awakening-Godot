@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="Fire Emblem: Awakening"
+run/main_scene="uid://kmmr2g1r2wih"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*res://Scripts/game_manager.gd"
 
 [rendering]
 

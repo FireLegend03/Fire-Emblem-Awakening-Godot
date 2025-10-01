@@ -4,7 +4,8 @@
 
 [resource]
 script = ExtResource("1_084v6")
-name = "Frederick"
+unit_name = "Frederick"
+unit_class = "Great Knight"
 level = 1
 max_hp = 28
 strength = 13

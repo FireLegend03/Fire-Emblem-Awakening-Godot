@@ -4,7 +4,8 @@
 
 [resource]
 script = ExtResource("1_hrix8")
-name = "Lissa"
+unit_name = "Lissa"
+unit_class = "Cleric"
 level = 1
 max_hp = 17
 strength = 1
