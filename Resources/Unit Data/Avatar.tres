@@ -6,6 +6,7 @@
 script = ExtResource("1_dcdc5")
 unit_name = "Pedro"
 unit_class = "Tactician"
+unit_type = "Special"
 level = 1
 max_hp = 19
 strength = 6

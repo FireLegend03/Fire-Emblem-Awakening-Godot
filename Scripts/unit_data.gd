@@ -4,6 +4,7 @@ class_name UnitData
 
 @export var unit_name: String
 @export var unit_class : String
+@export var unit_type: String # e.g., "Infantry", "Mounted", "Fliers", "Magicians", "Special"
 
 # Stats
 @export var level: int

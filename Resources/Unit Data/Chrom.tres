@@ -6,6 +6,7 @@
 script = ExtResource("1_poyub")
 unit_name = "Chrom"
 unit_class = "Lord"
+unit_type = "Special"
 level = 1
 max_hp = 20
 strength = 7

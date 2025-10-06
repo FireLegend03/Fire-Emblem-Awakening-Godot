@@ -6,6 +6,7 @@
 script = ExtResource("1_hrix8")
 unit_name = "Lissa"
 unit_class = "Cleric"
+unit_type = "Infantry"
 level = 1
 max_hp = 17
 strength = 1
