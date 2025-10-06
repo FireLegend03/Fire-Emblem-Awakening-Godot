@@ -6,6 +6,7 @@
 script = ExtResource("1_084v6")
 unit_name = "Frederick"
 unit_class = "Great Knight"
+unit_type = "Mounted"
 level = 1
 max_hp = 28
 strength = 13
