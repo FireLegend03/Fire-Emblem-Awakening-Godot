@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://kmmr2g1r2wih"]
 
-[ext_resource type="Script" uid="uid://bm53xavr10ccc" path="res://Scenes/prologue.gd" id="1_ctcux"]
+[ext_resource type="Script" uid="uid://bm53xavr10ccc" path="res://Scripts/prologue.gd" id="1_ctcux"]
 [ext_resource type="Texture2D" uid="uid://bwwvdm28nxgpc" path="res://Assets/Maps/FE13_Prologue.webp" id="2_4ckav"]
 [ext_resource type="PackedScene" uid="uid://dw572oux2nuox" path="res://Scenes/highlight_map.tscn" id="3_u0vu3"]
 
