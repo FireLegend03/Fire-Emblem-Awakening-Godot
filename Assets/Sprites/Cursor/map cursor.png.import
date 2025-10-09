@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drsyau4aglbmp"
-path="res://.godot/imported/hand-cursor-icon-260nw-433608460.webp-933b0c0c15c3c2bb2f34256fcacc0f03.ctex"
+uid="uid://uumh768mxr65"
+path="res://.godot/imported/map cursor.png-43c44b78b10f5f4dc413f813350d6776.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Cursor/hand-cursor-icon-260nw-433608460.webp"
-dest_files=["res://.godot/imported/hand-cursor-icon-260nw-433608460.webp-933b0c0c15c3c2bb2f34256fcacc0f03.ctex"]
+source_file="res://Assets/Sprites/Cursor/map cursor.png"
+dest_files=["res://.godot/imported/map cursor.png-43c44b78b10f5f4dc413f813350d6776.ctex"]
 
 [params]
 
