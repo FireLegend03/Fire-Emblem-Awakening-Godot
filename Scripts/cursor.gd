@@ -28,83 +28,18 @@ func _process(_delta: float) -> void:
 	
 	match state:
 		STATE.IDLE:
-			# Diagonal movement
-			if Input.is_action_just_pressed("ui_right") and Input.is_action_just_pressed("ui_down"):
+			var current_direction = Vector2.ZERO
+			current_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+			if current_direction != previous_direction and current_direction != Vector2.ZERO:
+				previous_direction = current_direction
 				holding_delay_timer.start() # Start the timer for holding delay only after the first move
-				previous_direction = Vector2(1, 1)
 				move_cursor(previous_direction)
-			elif Input.is_action_just_pressed("ui_right") and Input.is_action_just_pressed("ui_up"):
-				holding_delay_timer.start()
-				previous_direction = Vector2(1, -1)
-				move_cursor(previous_direction)
-			elif Input.is_action_just_pressed("ui_left") and Input.is_action_just_pressed("ui_up"):
-				holding_delay_timer.start()
-				previous_direction = Vector2(-1, -1)
-				move_cursor(previous_direction)
-			elif Input.is_action_just_pressed("ui_left") and Input.is_action_just_pressed("ui_down"):
-				holding_delay_timer.start()
-				previous_direction = Vector2(-1, 1)
-				move_cursor(previous_direction)
-
-			# Single input directions
-			elif Input.is_action_just_pressed("ui_right"):
-				holding_delay_timer.start()
-				previous_direction = Vector2(1, 0)
-				move_cursor(previous_direction)
-			elif Input.is_action_just_pressed("ui_left"):
-				holding_delay_timer.start()
-				previous_direction = Vector2(-1, 0)
-				move_cursor(previous_direction)
-			elif Input.is_action_just_pressed("ui_down"):
-				holding_delay_timer.start()
-				previous_direction = Vector2(0, 1)
-				move_cursor(previous_direction)
-			elif Input.is_action_just_pressed("ui_up"):
-				holding_delay_timer.start()
-				previous_direction = Vector2(0, -1)
-				move_cursor(previous_direction)
-
-			# Holding input directions
-			# Slide if the timer has run out and the key is still held
-			elif holding_delay_timer.time_left == 0:
-				var current_direction = Vector2.ZERO
-				# Diagonal movement
-				if Input.is_action_pressed("ui_right") and Input.is_action_pressed("ui_down"):
-					current_direction = Vector2(1, 1)
-					move_cursor(current_direction)
-				elif Input.is_action_pressed("ui_right") and Input.is_action_pressed("ui_up"):
-					current_direction = Vector2(1, -1)
-					move_cursor(current_direction)
-				elif Input.is_action_pressed("ui_left") and Input.is_action_pressed("ui_up"):
-					current_direction = Vector2(-1, -1)
-					move_cursor(current_direction)
-				elif Input.is_action_pressed("ui_left") and Input.is_action_pressed("ui_down"):
-					current_direction = Vector2(-1, 1)
-					move_cursor(current_direction)
-
-				# Single directions
-				elif Input.is_action_pressed("ui_right"):
-					current_direction = Vector2(1, 0)
-					move_cursor(current_direction)
-				elif Input.is_action_pressed("ui_left"):
-					current_direction = Vector2(-1, 0)
-					move_cursor(current_direction)
-				elif Input.is_action_pressed("ui_down"):
-					current_direction = Vector2(0, 1)
-					move_cursor(current_direction)
-				elif Input.is_action_pressed("ui_up"):
-					current_direction = Vector2(0, -1)
-					move_cursor(current_direction)
-				
-				# If the direction has changed, reset the timer
-				if current_direction != previous_direction and current_direction != Vector2.ZERO:
-					previous_direction = current_direction
-					holding_delay_timer.start()
-
-
-	if (Input.is_action_just_released("ui_right") or Input.is_action_just_released("ui_left")
-	or Input.is_action_just_released("ui_down") or Input.is_action_just_released("ui_up")):
-		holding_delay_timer.stop()
+			elif current_direction == Vector2.ZERO:
+				holding_delay_timer.stop()
+				previous_direction = Vector2.ZERO
+			elif holding_delay_timer.time_left == 0 and current_direction != Vector2.ZERO:
+				move_cursor(current_direction)
+			
 	
 
 func move_cursor(direction: Vector2) -> void:
