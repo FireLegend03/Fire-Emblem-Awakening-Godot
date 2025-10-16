@@ -4,6 +4,7 @@
 
 [resource]
 script = ExtResource("1_xqcif")
+terrain_type = "Lake"
 movement_cost = {
 "Fliers": 1,
 "Infantry": 20,

@@ -29,7 +29,8 @@ func _process(_delta: float) -> void:
 	match state:
 		STATE.IDLE:
 			var current_direction = Vector2.ZERO
-			current_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+			# Rounds so diagonal input are (1,1), (-1,1), (1,-1), (-1,-1)
+			current_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down").round()
 			if current_direction != previous_direction and current_direction != Vector2.ZERO:
 				previous_direction = current_direction
 				holding_delay_timer.start() # Start the timer for holding delay only after the first move

@@ -4,4 +4,5 @@
 
 [resource]
 script = ExtResource("1_5anlh")
+terrain_type = "Plain"
 metadata/_custom_type_script = "uid://cr0uwji37p7da"
