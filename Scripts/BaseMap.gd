@@ -3,13 +3,18 @@ extends Node
 # Base class for all map functionalities
 class_name BaseMap
 
-@export var height: int
 @export var width: int
+@export var height: int
 
 const TILE_SIZE = 28
 
 var map_grid = []
 var unit_grid = []
+var tiles: Dictionary = {
+    "plain": preload("res://Resources/Tiles/Plain.tres"),
+    "lake": preload("res://Resources/Tiles/Lake.tres"),
+    "wall": preload("res://Resources/Tiles/Wall.tres")
+}
 
 
 # Return the array with all reachable tiles for a given unit (to paint in blue)

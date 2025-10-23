@@ -20,7 +20,6 @@ var cursor_tween: Tween # Tween for smooth cursor movement
 var previous_direction: Vector2 = Vector2.ZERO # To track the last direction moved
 
 func _ready():
-	position = Vector2(14 + TILE_SIZE * 5, 14 + TILE_SIZE * 5)  # Initial position
 	hover_animation()
 
 

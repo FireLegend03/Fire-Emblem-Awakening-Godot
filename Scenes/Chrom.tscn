@@ -206,7 +206,6 @@ animations = [{
 }]
 
 [node name="Node2D" type="Node2D" node_paths=PackedStringArray("animation")]
-visibility_layer = 4
 script = ExtResource("1_616ll")
 unit_data = ExtResource("2_p41vl")
 animation = NodePath("AnimatedSprite2D")

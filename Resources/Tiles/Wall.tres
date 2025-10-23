@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Tile" load_steps=2 format=3 uid="uid://b6ubnqlc6ncqs"]
+
+[ext_resource type="Script" uid="uid://cr0uwji37p7da" path="res://Scripts/Tile.gd" id="1_ijhl5"]
+
+[resource]
+script = ExtResource("1_ijhl5")
+terrain_type = "Wall"
+movement_cost = {
+"Fliers": 1,
+"Infantry": 20,
+"Magicians": 20,
+"Mounted": 20,
+"Special": 20
+}
+metadata/_custom_type_script = "uid://cr0uwji37p7da"

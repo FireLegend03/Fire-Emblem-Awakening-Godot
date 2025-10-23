@@ -4,13 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://lcjlsavyiwqh" path="res://Assets/Sprites/Cursor/original cursor.webp" id="3_gjojv"]
 
 [node name="Cursor" type="Node2D" node_paths=PackedStringArray("cursor_sprite", "holding_delay_timer")]
+z_index = 1
 script = ExtResource("1_8pp82")
 cursor_sprite = NodePath("Sprite2D")
 map_size = Vector2i(15, 15)
 holding_delay_timer = NodePath("Holding_Delay")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-2, -4)
+position = Vector2(-2, -21.000002)
 scale = Vector2(0.15, 0.16785714)
 texture = ExtResource("3_gjojv")
 
