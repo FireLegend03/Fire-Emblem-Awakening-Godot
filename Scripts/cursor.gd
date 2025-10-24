@@ -19,6 +19,9 @@ const TILE_SIZE = 28
 var cursor_tween: Tween # Tween for smooth cursor movement
 var previous_direction: Vector2 = Vector2.ZERO # To track the last direction moved
 
+signal cursor_moved(new_position: Vector2)
+
+
 func _ready():
 	hover_animation()
 
@@ -44,9 +47,10 @@ func _process(_delta: float) -> void:
 
 func move_cursor(direction: Vector2) -> void:
 	var new_position = position + direction * TILE_SIZE
-	print("Moving cursor to: ", new_position)
 	if new_position.x >= 0 and new_position.x < map_size.x * TILE_SIZE and new_position.y >= 0 and new_position.y < map_size.y * TILE_SIZE:
 		state = STATE.MOVING
+		cursor_moved.emit(new_position) # Tells the map the new cursor position
+
 		cursor_tween = get_tree().create_tween()
 		# Smoothly move to new position (4 frames)
 		cursor_tween.tween_property(self, "position", new_position, 0.07) 
@@ -56,11 +60,6 @@ func move_cursor(direction: Vector2) -> void:
 		cursor_tween.kill() # Free the tween
 		state = STATE.IDLE # Allow movement again
 	
-
-
-func _on_holding_delay_timeout() -> void:
-	pass # Replace with function body.
-
 
 # Creates looping up and down animation for the cursor
 func hover_animation():
