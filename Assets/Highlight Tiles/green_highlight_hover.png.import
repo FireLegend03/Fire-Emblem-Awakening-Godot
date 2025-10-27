@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qeqwyu5uobsn"
-path="res://.godot/imported/Chrom.png-a60682b67fbfec5b6fdc9f9df7a985a7.ctex"
+uid="uid://b500k3eng8oo0"
+path="res://.godot/imported/green_highlight_hover.png-ecad0c2da7688dd4d224b0af6cbc92b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Chrom.png"
-dest_files=["res://.godot/imported/Chrom.png-a60682b67fbfec5b6fdc9f9df7a985a7.ctex"]
+source_file="res://Assets/Highlight Tiles/green_highlight_hover.png"
+dest_files=["res://.godot/imported/green_highlight_hover.png-ecad0c2da7688dd4d224b0af6cbc92b4.ctex"]
 
 [params]
 

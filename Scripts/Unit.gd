@@ -22,3 +22,9 @@ func _ready():
     else:
         push_error("UnitData not assigned to Unit node.")
 
+
+func get_movement() -> int:
+    return data.movement
+
+func get_type() -> String:
+    return data.unit_type

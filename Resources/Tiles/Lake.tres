@@ -4,11 +4,12 @@
 
 [resource]
 script = ExtResource("1_xqcif")
+terrain_type = "Lake"
 movement_cost = {
 "Fliers": 1,
 "Infantry": 20,
 "Magicians": 20,
 "Mounted": 20,
-"Special": 1
+"Special": 20
 }
 metadata/_custom_type_script = "uid://cr0uwji37p7da"

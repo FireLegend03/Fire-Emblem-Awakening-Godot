@@ -3,6 +3,7 @@ extends Resource
 class_name Tile
 
 @export var terrain_type: String
+@export var walkable: bool = true
 @export var movement_cost: Dictionary = {
     "Infantry": 1,
     "Mounted": 1,
