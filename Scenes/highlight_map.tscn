@@ -1,12 +1,50 @@
-[gd_scene load_steps=4 format=3 uid="uid://dw572oux2nuox"]
+[gd_scene load_steps=14 format=3 uid="uid://dw572oux2nuox"]
 
-[ext_resource type="PackedScene" uid="uid://bb1b14ecq73pa" path="res://Scenes/blue_highlight.tscn" id="1_qo8nw"]
+[ext_resource type="Texture2D" uid="uid://cnrnr3n1xqpah" path="res://Assets/Highlight Tiles/blue_highlight_hover.png" id="1_u05bf"]
+[ext_resource type="Texture2D" uid="uid://bbhb76kvigu31" path="res://Assets/Highlight Tiles/blue_highlight_selected.png" id="2_k0mma"]
+[ext_resource type="Texture2D" uid="uid://b500k3eng8oo0" path="res://Assets/Highlight Tiles/green_highlight_hover.png" id="3_uo0vm"]
+[ext_resource type="Texture2D" uid="uid://chfao6aj0sdty" path="res://Assets/Highlight Tiles/green_highlight_selected.png" id="4_0qoqu"]
+[ext_resource type="Texture2D" uid="uid://c6coqeyuhh803" path="res://Assets/Highlight Tiles/red_highlight_hover.png" id="5_sba1r"]
+[ext_resource type="Texture2D" uid="uid://r8rt5umuhh77" path="res://Assets/Highlight Tiles/red_highlight_selected.png" id="6_pxmm6"]
 
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_6k8t1"]
-scenes/1/scene = ExtResource("1_qo8nw")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1n7ph"]
+texture = ExtResource("1_u05bf")
+texture_region_size = Vector2i(28, 28)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vltys"]
+texture = ExtResource("2_k0mma")
+texture_region_size = Vector2i(28, 28)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_62io5"]
+texture = ExtResource("3_uo0vm")
+texture_region_size = Vector2i(28, 28)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ljhxf"]
+texture = ExtResource("4_0qoqu")
+texture_region_size = Vector2i(28, 28)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gbtbo"]
+texture = ExtResource("5_sba1r")
+texture_region_size = Vector2i(28, 28)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pafor"]
+texture = ExtResource("6_pxmm6")
+texture_region_size = Vector2i(28, 28)
+0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_ksij4"]
-sources/1 = SubResource("TileSetScenesCollectionSource_6k8t1")
+tile_size = Vector2i(28, 28)
+sources/0 = SubResource("TileSetAtlasSource_1n7ph")
+sources/1 = SubResource("TileSetAtlasSource_vltys")
+sources/2 = SubResource("TileSetAtlasSource_62io5")
+sources/3 = SubResource("TileSetAtlasSource_ljhxf")
+sources/4 = SubResource("TileSetAtlasSource_gbtbo")
+sources/5 = SubResource("TileSetAtlasSource_pafor")
 
 [node name="HighlightMap" type="TileMap"]
 visibility_layer = 2
